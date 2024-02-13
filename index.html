@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blackjack Simulator</title>
+<script type="text/javascript" src="index.js"></script>
+<link rel="StyleSheet" href="index.css" />
+</head>
+<body>
+    <h1>Blackjack Hi lo Simulator</h1>
+    <div class="options-container">
+	    <button onclick="startGame()">Empezar partida</button>
+	    <button onclick="deal()">Repartir</button>
+	    <button id="ViewCardsButton" onclick="viewDeck()">Ver masos</button>
+	    <button onclick="restart()">Reiniciar</button>
+    </div>
+    <div id="velocityInputContainer">
+    </div>
+
+    <div class="stats-container">
+    	<div class="stat-option">
+    		<div>
+    			<label for="cardsCounter">Contador de cartas</label>
+	    		<input onchange="deckCounter()" type="checkBox" id="cardsCounter">
+    		</div>
+    	</div>
+    	<div class="stat-option">
+    		<div>
+		    	<label for="hiLoCounterCheckBox">Contador de Hi lo</label>
+		    	<input onchange="hiLoCounter()" type="checkBox" id="hiLoCounterCheckBox">
+    		</div>
+		    <p class="hiLo-counter-container" id="hiLoCounter"></p>
+    	</div>
+    	<div class="stat-option">
+    		<div>
+    			<label for="Jugadores">Cantidad de mazos:</label>
+	    		<input onchange="changeDeck(event)" class="input-number" value="6" type="number">
+    		</div>
+    	</div>
+    	<div class="stat-option">
+    		<div>
+    			<label for="Jugadores">Cantidad de jugadores:</label>
+	    		<input onchange="changePlayers(event)" class="input-number" value="6" type="number">
+    		</div>
+    	</div>
+    </div>
+    <div id="game-container" class="game-container">
+	    <div id="players">
+	    </div>
+	    <div id="dealer"></div>
+    </div>
+    <div id="decks" class="decks hide">
+    	<div id="main-deck">
+    		<p>Cartas en el maso: <span id="main-deck-count"></span></p>
+    		<div class="deck-numbers">
+    			<p>2: <span id="main-deck-number-0"></span></p>
+    			<p>3: <span id="main-deck-number-1"></span></p>
+    			<p>4: <span id="main-deck-number-2"></span></p>
+    			<p>5: <span id="main-deck-number-3"></span></p>
+    			<p>6: <span id="main-deck-number-4"></span></p>
+    			<p>7: <span id="main-deck-number-5"></span></p>
+    			<p>8: <span id="main-deck-number-6"></span></p>
+    			<p>9: <span id="main-deck-number-7"></span></p>
+    			<p>10: <span id="main-deck-number-8"></span></p>
+    			<p>J: <span id="main-deck-number-9"></span></p>
+    			<p>Q: <span id="main-deck-number-10"><span></p>
+    			<p>K: <span id="main-deck-number-11"><span></p>
+    			<p>A: <span id="main-deck-number-12"><span></p>
+    		</div>
+    	</div>
+    	<div id="played-deck">
+    		<p>Cartas ya jugadas: <span id="played-deck-count"></span></p>
+    		<div class="deck-numbers">
+    			<p>2: <span id="played-deck-number-0"></span></p>
+    			<p>3: <span id="played-deck-number-1"></span></p>
+    			<p>4: <span id="played-deck-number-2"></span></p>
+    			<p>5: <span id="played-deck-number-3"></span></p>
+    			<p>6: <span id="played-deck-number-4"></span></p>
+    			<p>7: <span id="played-deck-number-5"></span></p>
+    			<p>8: <span id="played-deck-number-6"></span></p>
+    			<p>9: <span id="played-deck-number-7"></span></p>
+    			<p>10: <span id="played-deck-number-8"></span></p>
+    			<p>J: <span id="played-deck-number-9"></span></p>
+    			<p>Q: <span id="played-deck-number-10"><span></p>
+    			<p>K: <span id="played-deck-number-11"><span></p>
+    			<p>A: <span id="played-deck-number-12"><span></p>
+    		</div>
+    	</div>
+    </div>
+    <div id="gameResut"></div>
+</body>
+</html>

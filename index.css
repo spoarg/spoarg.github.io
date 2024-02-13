@@ -1,0 +1,203 @@
+*{
+	margin: 0;
+	font-family: arial ;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1{
+	margin: 40px;
+}
+
+#hiLoCounter{
+	margin-left: 10px;
+
+}
+
+#ViewCardsButton{
+	width: 137.28px;
+}
+
+.options-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 30px 0;
+}
+
+.options-container button{
+	margin: 0 8px;
+	border: 1px solid #ccc;
+	padding: 10px 18px;
+	border-radius: 0;
+}
+
+
+.stats-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.hiLo-counter-container{
+    margin-top: 5px;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+}
+
+.stat-option{
+	display: flex;
+	flex-direction: column;
+}
+
+.stat-option div{
+	display: flex;
+	align-items: start;
+	margin: 0 15px;
+}
+
+.stat-option label{
+	margin-right: 8px;
+	font-size: 13px;
+	color: #333;
+}
+
+
+#players{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.player{
+	background-color: #f5f5f5;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+}
+
+.player-dealer{
+	background-color: #f5f5f5;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px 15px 0 15px;
+}
+
+.player div, .player-dealer div{
+	display: flex;
+}
+
+.cards{
+	display: flex;
+	margin: 10px 0;
+}
+
+.card{
+	background-color: #cfcfcf;
+	width: 40px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 20px;
+	margin: 5px;
+	padding: 10px 5px;
+}
+
+.card-red{
+	background-color: #ff9f9f;
+}
+
+
+.decks{
+	background-color: #f5f5f5;
+	margin-top: 20px;
+	max-width: 90%;
+	padding: 20px 30px;
+}
+
+.hide{
+	display: none;
+}
+
+.deck-numbers{
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.deck-numbers p{
+	margin: 10px;
+	color: #333;
+}
+
+.deck-numbers span{
+}
+
+#played-deck{
+	margin-top: 20px;
+}
+
+.velocityInputContainer{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.velocityInputContainer p{
+	padding: 5px 10px;
+	width: 31.14px;
+	margin: 0 5px;
+	background-color: #F5F5F5;
+}
+
+.velocityInputContainer input{
+	padding: 5px 10px;
+}
+
+#gameResut{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 10px;
+}
+
+.cardGameResut{
+	border: 1px solid #666;
+	color: #666;
+	padding: 8px 10px;
+	margin: 5px 0;
+	background-color: #eee;
+}
+
+.cardGameResut-good{
+	border: 1px solid #2b811e;
+	color: #2b811e;
+	background-color: #e4fce0;
+}
+
+.cardGameResut-bad{
+	border: 1px solid #811e1e;
+	color: #811e1e;
+	background-color: #fce0e0;
+}
+
+.input-number{
+	height: 12px;
+	width: 25px;
+	font-size: 10px;
+}
